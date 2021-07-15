@@ -80,7 +80,7 @@ a.nav-link:hover{
   content: '';
   display: block;
   position: absolute;
-  width: 2px;
+  width: 1px;
   height: 130px;
   bottom: 0px;
   left: -10px;
