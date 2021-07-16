@@ -31,6 +31,9 @@ body{
 .t4{
   font-size: 1.1rem;
 }
+.t5{
+  font-size: 0.9rem;
+}
 .w100{
   font-weight: 100;
 }
@@ -39,6 +42,9 @@ body{
 }
 .w400{
   font-weight: 400;
+}
+.i{
+  font-style: italic;
 }
 .colorBg{
   color: #0cf9ef;
@@ -191,14 +197,17 @@ a.nav-link:hover{
 #contact{
   background: #111;
 }
-#contact .lineBg{
+#contact .lineWt{
   width: 50px;
   transform-origin: center;
   transform: rotate(135deg);
 }
 #contact .t1.w400.colorBg{
   color: rgba(12, 249, 239,0);
-  -webkit-text-stroke: 1px #0cf9ef;
+  -webkit-text-stroke: 1px #f9f9f9;
+}
+#contact iframe{
+  filter: brightness(0.8);
 }
 /* contact end */
 
