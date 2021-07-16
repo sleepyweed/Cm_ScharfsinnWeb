@@ -4,6 +4,19 @@ body{
   background: #191e24;
   color:#f9f9f9;
   overflow-x:hidden;
+  font-family: 'Lato', sans-serif;
+}
+.lineWt{
+  border-bottom: #f9f9f9 1px solid;
+  width: 250px;
+}
+.lineBg{
+  border-bottom: #0cf9ef 1px solid;
+  width: 250px;
+}
+.lineBb{
+  border-bottom: #191e24 1px solid;
+  width: 250px;
 }
 .t1{
   font-size: 3rem;
@@ -12,8 +25,11 @@ body{
 .t2{
   font-size: 2rem;
 }
-.fontLato{
-  font-family: 'Lato', sans-serif;
+.t3{
+  font-size: 1.4rem;
+}
+.t4{
+  font-size: 1.1rem;
 }
 .w100{
   font-weight: 100;
@@ -23,6 +39,12 @@ body{
 }
 .w400{
   font-weight: 400;
+}
+.colorBg{
+  color: #0cf9ef;
+}
+.colorBb{
+  color: #191e24;
 }
 /* all end */
 
@@ -36,7 +58,7 @@ a.nav-link{
   font-size: 1.1rem;
 }
 a.nav-link:hover{
-  color: rgb(12, 249, 239) !important;
+  color: #0cf9ef !important;
 }
 .navbar-dark .navbar-toggler{
   border-color:#0cf9ef !important;
@@ -89,3 +111,99 @@ a.nav-link:hover{
   z-index: 1000;
 }
 /* home End */
+
+/* about start */
+#about .card{
+  background-color: rgba(255, 255, 255,0);
+  border: 0.5px solid #f9f9f9;
+  border-radius: 5px;
+}
+#about .card:hover{
+  border: #191e24;
+  background: rgba(12, 249, 239,0.9);
+  color: #191e24;
+  transition: 0.5s ease;
+}
+/* about end */
+
+/* product start */
+#product{
+  width: 100vw;
+  height: 70vh;
+}
+#product .pic{
+  background: url(../img/webp02.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#product .plate{
+  height: 555px;
+  background: rgba(249, 249, 249,0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+/* product end */
+
+/* news start */
+#news{
+  width: 100vw;
+  height: 70vh;
+}
+#news .pic{
+  background: url(../img/webp03.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#news .plate{
+  height: 555px;
+  background: rgba(249, 249, 249,0.1);
+  /* background: rgba(25, 30, 36,0.1); */
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+/* news end */
+
+/* service start */
+#service .col-6{
+  transform: scale(1.1);
+}
+/* service end */
+
+/* partner start */
+#partner{
+  background: #bbb;
+}
+#partner .col-6{
+  transform: scale(1.2);
+  filter:saturate(120%);
+}
+#partner .btn{
+  background-color:rgba(12, 249, 239,0.7) !important ;
+  color: #f9f9f9;
+}
+/* partner end */
+
+/* contact start */
+#contact{
+  background: #111;
+}
+#contact .lineBg{
+  width: 50px;
+  transform-origin: center;
+  transform: rotate(135deg);
+}
+#contact .t1.w400.colorBg{
+  color: rgba(12, 249, 239,0);
+  -webkit-text-stroke: 1px #0cf9ef;
+}
+/* contact end */
+
+/* footer start */
+footer{
+  background: #111;
+}
+/* footer end */
