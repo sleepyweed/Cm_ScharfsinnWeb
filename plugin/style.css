@@ -1,4 +1,5 @@
 /* #0cf9ef *//* #191e24 *//* #111 *//* #f9f9f9 *//* #bbb *//* #ccc */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Ubuntu:wght@300;400&display=swap');
 /* all start */
 body{
   background: #191e24;
@@ -18,9 +19,14 @@ body{
   border-bottom: #191e24 1px solid;
   width: 250px;
 }
+.Lato{
+  font-family: 'Lato', sans-serif;
+}
+.Ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
 .t1{
   font-size: 3rem;
-  font-family: 'Lato', sans-serif;
 }
 .t2{
   font-size: 2rem;
@@ -32,7 +38,7 @@ body{
   font-size: 1.1rem;
 }
 .t5{
-  font-size: 0.9rem;
+  font-size: 19px;
 }
 .w100{
   font-weight: 100;
@@ -55,22 +61,35 @@ body{
 /* all end */
 
 /* header Start */
-.navbar-dark{
-  /* background:rgba(249, 249, 249,.2)!important; */
-  background:rgba(249, 249, 249,0)!important;
+.top{
+  display: flex;
+  justify-content: space-between;
+  background: rgba(249, 249, 249,0.3);
+  backdrop-filter: blur(5px);
 }
-a.nav-link{
-  color: #f9f9f9 !important;
-  font-size: 1.1rem;
+.top ul{
+  display: flex;
+  list-style:none;
+  padding: 0px;
+  margin: 0 23px 0 0;
 }
-a.nav-link:hover{
-  color: #0cf9ef !important;
+.top ul li{
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  position: relative;
 }
-.navbar-dark .navbar-toggler{
-  border-color:#0cf9ef !important;
+.top ul li a{
+  font-family: 'Ubuntu', sans-serif; 
+  font-weight: 400;
+  font-size: 21px;
+  color: #f9f9f9;
 }
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2812, 249, 239%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+.childBlock{
+  background: rgba(249, 249, 249,0.4);
+  position: absolute;
+  top: 90px;
+  width: 180px;
 }
 /* header End */
 
