@@ -32,6 +32,27 @@ $(document).ready(function(){
   $(window).resize();
   spy();
 
+// nav
+// ?.classList.remove('Show');
+    let p = document.querySelector('.parent');
+    p.addEventListener('mouseover',function(){
+      let pc = document.querySelector('.productChild');
+      pc.style.display = 'block';
+      pc.addEventListener('mouseover',function(){
+        pc.style.display = 'block';
+      })
+    })
+    p.addEventListener('mouseout',function(){
+      let pc = document.querySelector('.productChild');
+      pc.style.display = 'none';
+      pc.addEventListener('mouseout',function(){
+        pc.style.display = 'none';
+      })
+    })
+
+
+
+
 
 
 

@@ -1,11 +1,12 @@
 /* #0cf9ef *//* #191e24 *//* #111 *//* #f9f9f9 *//* #bbb *//* #ccc */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Ubuntu:wght@300;400&family=Noto+Sans+TC:wght@400;500&display=swap');
 /* all start */
 body{
   background: #191e24;
   color:#f9f9f9;
   overflow-x:hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight:400;
 }
 .lineWt{
   border-bottom: #f9f9f9 1px solid;
@@ -19,36 +20,23 @@ body{
   border-bottom: #191e24 1px solid;
   width: 250px;
 }
-.Lato{
-  font-family: 'Lato', sans-serif;
-}
-.Ubuntu{
-  font-family: 'Ubuntu', sans-serif;
-}
+.Lato{font-family: 'Lato', sans-serif;}.Ubuntu{font-family: 'Ubuntu', sans-serif;}
 .t1{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .t2{
   font-size: 2rem;
 }
 .t3{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .t4{
   font-size: 1.1rem;
 }
 .t5{
-  font-size: 19px;
+  font-size: 0.8rem;
 }
-.w100{
-  font-weight: 100;
-}
-.w300{
-  font-weight: 300;
-}
-.w400{
-  font-weight: 400;
-}
+.w100{font-weight:100;}.w200{font-weight:200;}.w300{font-weight:300;}.w500{font-weight:500;}
 .i{
   font-style: italic;
 }
@@ -66,6 +54,7 @@ body{
   justify-content: space-between;
   background: rgba(249, 249, 249,0.3);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
 }
 .top ul{
   display: flex;
@@ -85,11 +74,34 @@ body{
   font-size: 21px;
   color: #f9f9f9;
 }
-.childBlock{
+.top ul li a:hover{
+  text-decoration:none;
+}
+/* nav在1024以下要RWD */
+.productChild,.serviceChild{
   background: rgba(249, 249, 249,0.4);
   position: absolute;
   top: 90px;
   width: 180px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.productChild{
+  right: 411px;
+  display: none;
+}
+.serviceChild{
+  right: 183px;
+}
+.child{
+  font-size:19px;
+  font-weight:300;
+  font-family: 'Ubuntu', sans-serif;
+}
+.child:hover{
+  background: #f9f9f9;
+  color: #191e24;
+  cursor: pointer;
 }
 /* header End */
 
@@ -120,7 +132,7 @@ body{
   writing-mode: vertical-lr;
 }
 @keyframes scrollLine{ 
-  from { height: 0px; } 
+  from { height: 0px;} 
   to { height: 130px;}  
 }
 .scrollBar::after{
@@ -167,6 +179,7 @@ body{
   height: 555px;
   background: rgba(249, 249, 249,0.2);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
   border-radius: 5px;
 }
 /* product end */
@@ -188,6 +201,7 @@ body{
   background: rgba(249, 249, 249,0.1);
   /* background: rgba(25, 30, 36,0.1); */
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
   border-radius: 5px;
 }
 /* news end */
