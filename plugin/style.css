@@ -22,7 +22,7 @@ body{
 }
 .Lato{font-family: 'Lato', sans-serif;}.Ubuntu{font-family: 'Ubuntu', sans-serif;}
 .t1{
-  font-size: 3.5rem;
+  font-size: 3.3rem;
 }
 .t2{
   font-size: 2rem;
@@ -45,6 +45,15 @@ body{
 }
 .colorBb{
   color: #191e24;
+}
+.xc{
+  justify-content: center;
+}
+.yc{
+  align-items: center;
+}
+.column{
+  flex-direction: column;
 }
 /* all end */
 
@@ -81,13 +90,13 @@ body{
 .productChild,.serviceChild{
   background: rgba(249, 249, 249,0.4);
   position: absolute;
-  top: 90px;
+  top: 75px;
   width: 180px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter:blur(5px);
 }
 .productChild{
-  right: 411px;
+  right: 430px;
   display: none;
 }
 .serviceChild{
@@ -169,7 +178,7 @@ body{
   height: 70vh;
 }
 #product .pic{
-  background: url(../img/webp02.jpeg);
+  /* background: url(../img/webp02.jpeg); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -190,7 +199,7 @@ body{
   height: 70vh;
 }
 #news .pic{
-  background: url(../img/webp03.jpeg);
+  /* background: url(../img/webp03.jpeg); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -214,7 +223,7 @@ body{
 
 /* partner start */
 #partner{
-  background: #bbb;
+  /* background: #bbb; */
 }
 #partner .col-6{
   transform: scale(1.2);
@@ -228,7 +237,7 @@ body{
 
 /* contact start */
 #contact{
-  background: #111;
+  /* background: #111; */
 }
 #contact .lineWt{
   width: 50px;
@@ -246,6 +255,6 @@ body{
 
 /* footer start */
 footer{
-  background: #111;
+  /* background: #111; */
 }
 /* footer end */
